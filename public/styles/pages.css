@@ -9,7 +9,7 @@ div{
     flex-direction: column;
 }
 
-html{
+header, footer{
     background-color: #580f78;
     /* background-color: #bd40f4; */
 }

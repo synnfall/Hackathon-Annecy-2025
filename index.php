@@ -17,7 +17,7 @@
     <!-- Section de présentation -->
     <section>
         <div>
-            <img src="public/assets/Logo_IAF.png" alt="Logo" class="logo">
+            <img src="assets/Logo_IAF.png" alt="Logo" class="logo">
             <h1>Ingénieur au Féminin</h1>
         </div>
     </section>

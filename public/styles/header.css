@@ -8,3 +8,7 @@ div{
     flex: content;
     flex-direction: column;
 }
+
+:link{
+    color: white;
+}

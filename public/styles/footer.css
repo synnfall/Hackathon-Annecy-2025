@@ -1,0 +1,4 @@
+div{
+    flex: content;
+    flex-direction: column;
+}

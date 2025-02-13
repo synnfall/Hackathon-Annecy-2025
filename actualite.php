@@ -16,15 +16,12 @@ $jsonData = file_get_contents($jsonFile);
 $data = json_decode($jsonData, true);
 
 // Check if decoding was successful
-if ($data && isset($data['évenements'])) {
-    foreach ($data['évenements'] as $article) {
+if ($data && isset($data['actualités'])) {
+    foreach ($data['actualités'] as $article) {
         // Display the title and contents if not empty
         echo "";
         if (!empty($article['title'])) {
             echo "<h2>" . htmlspecialchars($article['title']) . "</h2>";
-        }
-        if (!empty($article['date'])) {
-            echo $article['date']; // Contains HTML content
         }
         // décomenter pour ajouter le contenu:
         if (!empty($article['contents'])) {

@@ -6,9 +6,14 @@
 div{
     text-align: center;
     display: flex;
+    flex: content;
     flex-direction: column;
 }
 
-.header_button{
+a{
+    color: white;
+}
+
+h2{
     color: white;
 }

@@ -35,7 +35,6 @@
                </p>
             </div>
         </section>
-        <img src="assets/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Logo" class="logo">
     </main>
 
     <?php require_once("chatbot.php"); ?>

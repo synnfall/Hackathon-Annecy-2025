@@ -4,6 +4,7 @@ $url = $_SERVER['REQUEST_URI'];
 $path = explode('?', $url)[0];
 
 echo $path;
+
 // if ($path === '/') {
 //     echo $path;
 // } else {

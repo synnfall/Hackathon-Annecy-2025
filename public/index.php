@@ -15,6 +15,9 @@ elseif ($path === '/event') {
 elseif ($path === '/partenaires' || $path === '/partenaire') {
     include __DIR__ . '/../partenaire.php';
 }
+elseif ($path === '/api/contact') {
+    include __DIR__ . '/../api_contact.php';
+}
 else {
     http_response_code(404);
     echo '404 Not Found';

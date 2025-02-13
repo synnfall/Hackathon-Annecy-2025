@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Nos évenements</h1>
+<h1>Nos actualités</h1>
 <?php
 // Read the JSON file
 $jsonFile = 'event.json'; // Update this with the actual file path

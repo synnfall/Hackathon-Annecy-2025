@@ -3,4 +3,6 @@ div{
     display: flex;
     flex: content;
     flex-direction: row;
+    width: 50%;
 }
+

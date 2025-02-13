@@ -6,8 +6,8 @@ $path = explode('?', $url)[0];
 if ($path === '/') {
     include __DIR__ . '/../index.php';
 } 
-elseif ($path === '/a_venir') {
-    include __DIR__ . '/../a_venir.php';
+elseif ($path === '/actualite') {
+    include __DIR__ . '/../actualite.php';
 }
 elseif ($path === '/event') {
     include __DIR__ . '/../event.php';

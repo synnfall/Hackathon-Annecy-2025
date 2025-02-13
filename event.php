@@ -13,6 +13,10 @@ $jsonFile = 'DataBase/event.json'; // Update this with the actual file path
 $jsonData = file_get_contents($jsonFile);
 
 // Decode the JSON data into an associative array
+if(!$jsonData){
+    echo "Erreur: impossible de charger les donnéesss.";
+    exit;
+}
 $data = json_decode($jsonData, true);
 
 // Check if decoding was successful

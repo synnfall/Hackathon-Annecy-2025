@@ -20,7 +20,7 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "http://127.0.0.1:8000/request";
+    const API_URL = "http://hackathon.cmi-info.fr:8000/request";
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request

@@ -5,6 +5,10 @@
 
 div{
     text-align: center;
-    flex: content;
+    display: flex;
     flex-direction: column;
+}
+
+.header_button{
+    color: white;
 }

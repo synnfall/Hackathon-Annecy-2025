@@ -9,22 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from llama_index.core.llms import ChatMessage
 
-app = FastAPI()
 
-# Autorise les requêtes depuis ton frontend (remplace avec l'URL correcte)
-origins = [
-    "http://localhost:8000",  # Si tu ouvres ton HTML avec Live Server (VS Code)
-    "http://127.0.0.1:8000",  # Variante avec IP
-    "http://localhost:8000",  # Si tu utilises React/Vite
-]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,  # Spécifie les origines autorisées
-    allow_credentials=True,
-    allow_methods=["*"],  # Autorise toutes les méthodes HTTP
-    allow_headers=["*"],  # Autorise tous les headers
-)
 
 class History(BaseModel):
     role: str

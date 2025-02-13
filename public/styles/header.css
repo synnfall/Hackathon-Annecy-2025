@@ -9,6 +9,6 @@ div{
     flex-direction: column;
 }
 
-:link{
+.header_button{
     color: white;
 }

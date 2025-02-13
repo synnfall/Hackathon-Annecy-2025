@@ -6,6 +6,7 @@
 div{
     text-align: center;
     display: flex;
+    flex: content;
     flex-direction: column;
 }
 

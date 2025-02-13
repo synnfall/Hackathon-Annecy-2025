@@ -28,7 +28,7 @@
         <p>Les femmes ont toute leur place dans le domaine de l'ingénierie. Découvrez des témoignages inspirants, des parcours et des opportunités pour faire évoluer votre carrière.</p>
     </section>
 </main>
-<script src=".js/chatbot.js"></script>
+<script src="js/chatbot.js"></script>
 <?php require_once("chatbot.php"); ?>
 <?php require_once("footer.php"); ?>
 </body>

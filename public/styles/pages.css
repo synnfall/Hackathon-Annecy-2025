@@ -8,3 +8,8 @@ div{
     flex: content;
     flex-direction: column;
 }
+
+main{
+    background-color: #580f78;
+    /* background-color: #bd40f4; */
+}

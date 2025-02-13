@@ -1,6 +1,5 @@
 <header>
     <div>Logo</div>
-    <button id="chatbot_bouton" href=""></button>
     <h1>Ingenieur au feminin</h1>
     <button class="header_bouton" href="/">Accueil</button>
     <button class="header_bouton" href="event">Evenement</button>

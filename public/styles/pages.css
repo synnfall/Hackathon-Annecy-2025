@@ -2,9 +2,3 @@
     width: 100px;
     height: 100px;
 }
-
-div{
-    text-align: center;
-    flex: content;
-    flex-direction: column;
-}

@@ -2,3 +2,9 @@
     width: 500px;
     height: 500px;
 }
+
+div{
+    text-align: center;
+    flex: content;
+    flex-direction: column;
+}

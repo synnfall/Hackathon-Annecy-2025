@@ -33,7 +33,7 @@
 
                 💬 Vous êtes ingénieure ou souhaitez le devenir ? Rejoignez-nous et contribuez à un avenir où le talent n’a pas de genre !
 
-                📩 Contactez-nous : [email/contact]</p>
+               </p>
             </div>
         </section>
     </main>

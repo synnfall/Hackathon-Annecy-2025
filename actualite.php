@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<?php require_once('header.php'); ?>
 <h1>Nos actualités</h1>
 <?php
 // Read the JSON file
@@ -33,5 +34,9 @@ if ($data && isset($data['actualités'])) {
     echo "Erreur: impossible de charger les données.";
 }
 ?>
+    <?php require_once("chatbot.php"); ?>
+    <?php require_once("footer.php"); ?>
 </body>
 </html>
+
+<script src="js/chatbot.js" defer></script>

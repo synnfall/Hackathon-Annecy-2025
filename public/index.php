@@ -4,7 +4,7 @@ $url = $_SERVER['REQUEST_URI'];
 $path = explode('?', $url)[0];
 
 if ($path === '/') {
-    include __DIR__ . '/../index.html';
+    include __DIR__ . '/../index.php';
 } 
 elseif ($path === '/a_venir') {
     include __DIR__ . '/../a_venir.php';

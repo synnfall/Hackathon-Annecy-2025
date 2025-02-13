@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>Ingenieur Au Féminin</title>
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/pages.css">
     <link rel="stylesheet" href="styles/chatbot.css">
 </head>

@@ -22,6 +22,3 @@
         </div>
     </div>
 </div>
-
-
-<script src="./public/js/chatbot.js"></script>

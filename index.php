@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>Ingenieur Au Féminin</title>
-    <link rel="stylesheet" href="public/styles/pages.css">
-    <link rel="stylesheet" href="public/styles/chatbot.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/chatbot.css">
 </head>
 <body>
 
@@ -28,6 +28,7 @@
         <p>Les femmes ont toute leur place dans le domaine de l'ingénierie. Découvrez des témoignages inspirants, des parcours et des opportunités pour faire évoluer votre carrière.</p>
     </section>
 </main>
+<script src="./public/js/chatbot.js"></script>
 <?php require_once("chatbot.php"); ?>
 <?php require_once("footer.php"); ?>
 </body>

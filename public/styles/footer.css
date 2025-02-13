@@ -3,5 +3,8 @@ div{
     display: flex;
     flex: content;
     flex-direction: row;
+}
+
+footer{
     width: 50%;
 }

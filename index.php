@@ -32,10 +32,10 @@
                 🔍 Découvrez des témoignages, des conseils de carrière, des événements et des opportunités pour faire évoluer les mentalités et ouvrir la voie à une ingénierie plus inclusive.
 
                 💬 Vous êtes ingénieure ou souhaitez le devenir ? Rejoignez-nous et contribuez à un avenir où le talent n’a pas de genre !
-
                </p>
             </div>
         </section>
+        <img src="assets/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Logo" class="logo">
     </main>
 
     <?php require_once("chatbot.php"); ?>

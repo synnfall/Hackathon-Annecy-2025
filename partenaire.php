@@ -27,8 +27,15 @@
     💡 Envie de rejoindre l’aventure ?
     Devenez acteur du changement en soutenant nos actions et en participant à la construction d’un avenir plus équitable dans l’ingénierie.
     </p>
-    
-
+    <img src="assets\Logo_Credit_Agricol_Technologies_Services.jpg" alt="Logo" class="logo">
+    <img src="assets\Logo_CVEC.png" alt="Logo" class="logo">
+    <img src="assets\Logo_IAF.png" alt="Logo" class="logo">
+    <img src="assets\Logo_LISTIC.jpg" alt="Logo" class="logo">
+    <img src="assets\Logo_NTN.png" alt="Logo" class="logo">
+    <img src="assets\Logo_Polytech_Annecy_Chambery.svg.png" alt="Logo" class="logo">
+    <img src="assets\Logo_Sopra_Steria.png" alt="Logo" class="logo">
+    <img src="assets\Logo_Ville_Annecy.png" alt="Logo" class="logo">
+    <img src="assets\Polytech-Annecy-e1713881715983.jpg" alt="Logo" class="logo">
     <?php require_once("chatbot.php"); ?>
     <?php require_once("footer.php"); ?>
 </body>

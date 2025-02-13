@@ -18,8 +18,7 @@
         <!-- Section de présentation -->
         <section>
             <div>
-                <img src="assets/Logo_IAF.png" alt="Logo" class="logo">
-                <h1>Ingénieur·e au Féminin – Valoriser les Femmes dans l’Ingénierie</h1>
+                <h2>Ingénieur·e au Féminin – Valoriser les Femmes dans l’Ingénierie</h2>
                 <p>🚀 Les femmes façonnent l’ingénierie de demain !
 
                 Longtemps sous-représentées dans les métiers techniques, les femmes sont aujourd’hui de plus en plus nombreuses à s’imposer dans le monde de l’ingénierie. Ingénieur·e au Féminin est une plateforme dédiée à la promotion, au soutien et à la valorisation des femmes ingénieures.

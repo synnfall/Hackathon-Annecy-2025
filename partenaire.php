@@ -26,8 +26,8 @@
 
     💡 Envie de rejoindre l’aventure ?
     Devenez acteur du changement en soutenant nos actions et en participant à la construction d’un avenir plus équitable dans l’ingénierie.
-
     </p>
+    
 
     <?php require_once("chatbot.php"); ?>
     <?php require_once("footer.php"); ?>

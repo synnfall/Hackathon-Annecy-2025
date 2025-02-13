@@ -1,5 +1,5 @@
 <header>
-    <div>Logo</div>
+    <div><img src="assets/Logo_IAF.png" alt="Logo" class="logo"></div>
     <h1>Ingenieur au feminin</h1>
     <a class="header_bouton" href="/">Accueil</a>
     <a class="header_bouton" href="event">Evenement</a>

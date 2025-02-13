@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="public/styles/chatbot.css">
-</head>
 <header>
     <div>Logo</div>
     <a href="" class="chatbt">Cliquez ici</a>

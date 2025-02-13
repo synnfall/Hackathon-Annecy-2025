@@ -7,6 +7,7 @@
     <meta name="viewport">
     <title>Ingenieur Au Féminin</title>
     <link rel="stylesheet" href="public/styles/pages.css">
+    <link rel="stylesheet" href="public/styles/chatbot.css">
 </head>
 <body>
 

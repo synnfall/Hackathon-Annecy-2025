@@ -1,0 +1,99 @@
+/* Section de présentation */
+.presentation {
+    position: relative;
+    height: 300px;
+    background: url('../public/assets/Polytech-Annecy-e1713881715983.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation .overlay {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.presentation .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+}
+
+.presentation h1 {
+    font-size: 2.5em;
+    color: black;
+}
+
+/* Section des textes */
+.texte-section {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.texte-section h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+}
+
+.texte-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.texte-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.texte-section ul li {
+    margin: 10px 0;
+}
+
+/* Section des partenaires */
+.partenaires-section {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.partenaires-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Conteneur du défilement */
+.partenaires-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px; /* Espacement entre les logos */
+    animation: defilement 15s linear infinite;
+}
+
+/* Chaque logo */
+.partenaire-logo a img {
+    max-height: 80px;
+    width: auto;
+    display: block;
+}
+
+/*
+@keyframes defilement {
+    0% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(-75%);
+    }
+}
+*/
+/* Optionnel : masque de l'overflow pour cacher la partie non visible */
+.partenaires-container::-webkit-scrollbar {
+    display: none;
+}
+

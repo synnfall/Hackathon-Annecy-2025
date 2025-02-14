@@ -1,0 +1,40 @@
+/* Footer */
+footer {
+    background-color: #580f78;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Section partenaire : ajouter un espacement sous la section partenaire pour éviter le masquage */
+main {
+    padding-bottom: 80px; /* Ajoutez un espacement pour ne pas masquer le footer */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #f1f1f1;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

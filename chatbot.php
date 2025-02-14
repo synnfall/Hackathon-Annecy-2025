@@ -1,3 +1,52 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Récupérer l'entrée de l'utilisateur
+    $userInput = isset($_POST['userInput']) ? $_POST['userInput'] : '';
+
+    // Exemple de logique pour répondre à certaines questions
+    $response = "";
+    if (stripos($userInput, "association") !== false) {
+        $response = "L'Association 'Ingénieur Au Féminin' se consacre à promouvoir la place des femmes dans le domaine de l'ingénierie...";
+    } else {
+        $response = "Désolé, je ne comprends pas cette question.";
+    }
+
+    // Retourner la réponse en JSON
+    echo json_encode(['response' => $response]);
+}
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Ingénieur Au Féminin</title>
+    <link rel="stylesheet" type="text/css" href="CSS/global.css">
+    <link rel="stylesheet" type="text/css" href="CSS/chatbot.css">
+    <link rel="stylesheet" type="text/css" href="./public/components/header.css">
+    <link rel="stylesheet" type="text/css" href="./public/components/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/chatbot.css">
+    <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+
+<?php require_once('./public/components/header.php'); ?>
+
+<!-- Chatbot Container -->
+<div id="chatbot-container">
+    <button id="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+    <div id="chatbot-window" class="chatbot-window">
+        <div id="chatbot-header">
+            <span>Chatbot</span>
+            <button onclick="closeChatbot()">X</button>
+        </div>
+        <div id="chatbot-messages" class="chatbot-messages"></div>
+        <input type="text" id="user-input" placeholder="Posez une question..." onkeypress="sendMessage(event)">
+    </div>
+</div>
+
 <div class="main">
 
     <button class="chatbot-toggler">
@@ -22,3 +71,62 @@
         </div>
     </div>
 </div>
+
+<?php require_once("./public/components/footer.php"); ?>
+
+<script>
+    // Fonction pour envoyer un message
+    function sendMessage(event) {
+        if (event.key === "Enter" && event.target.value.trim() !== "") {
+            // Empêcher l'envoi de la touche Entrée par défaut
+            event.preventDefault();
+
+            const userInput = event.target.value.trim();
+            addMessage(userInput, "outgoing");
+
+            // Envoyer la requête AJAX vers le serveur PHP
+            fetch('your_php_file.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'userInput=' + encodeURIComponent(userInput)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Ajouter la réponse dans le chat
+                    addMessage(data.response, "incoming");
+                })
+                .catch(error => {
+                    console.error("Erreur lors de l'envoi du message :", error);
+                });
+
+            // Effacer l'input après l'envoi
+            event.target.value = '';
+        }
+    }
+
+    // Fonction pour ajouter un message au chat
+    function addMessage(message, type) {
+        const messageContainer = document.getElementById('chatbot-messages');
+        const messageElement = document.createElement('div');
+        messageElement.classList.add(type);
+        messageElement.textContent = message;
+        messageContainer.appendChild(messageElement);
+        messageContainer.scrollTop = messageContainer.scrollHeight;
+    }
+
+    // Fonction pour basculer l'affichage du chatbot
+    function toggleChatbot() {
+        document.body.classList.toggle('show-chatbot');
+    }
+
+    // Fonction pour fermer le chatbot
+    function closeChatbot() {
+        document.body.classList.remove('show-chatbot');
+    }
+
+</script>
+
+</body>
+</html>

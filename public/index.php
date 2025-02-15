@@ -5,7 +5,7 @@ $path = explode('?', $url)[0];
 
 if ($path === '/') {
     require __DIR__ . '/../pages/index.php';
-} elseif ($path === '/news') {
+} elseif ($path === '/news' || $path === '/new' || $path === '/nouvelles') {
     require __DIR__ . '/../pages/news.php';
 }
 elseif ($path === '/contact') {

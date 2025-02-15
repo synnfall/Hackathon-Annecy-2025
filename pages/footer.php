@@ -8,7 +8,7 @@
         <a href="https://www.linkedin.com/company/ing%C3%A9nieur-e-au-f%C3%A9minin" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="./contact.php" aria-label="Email">
+        <a href="/contact" aria-label="Email">
             <i class="fas fa-envelope"></i>
         </a>
     </div>

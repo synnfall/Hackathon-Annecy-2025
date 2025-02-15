@@ -6,20 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingenieur Au Féminin</title>
-    <link rel="stylesheet" type="text/css" href="CSS/global.css">
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <link rel="stylesheet" type="text/css" href="./public/components/header.css">
-    <link rel="stylesheet" type="text/css" href="./public/components/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-<?php require_once('./public/components/header.php'); ?>
+<?php require_once(__DIR__.'/header.php'); ?>
 
 <main>
     <!-- Section de présentation -->
     <section class="presentation">
         <div class="overlay">
-            <img src="./public/assets/Logo_IAF.png" alt="Logo" class="logo">
+            <img src="assets/Logo_IAF.png" alt="Logo" class="logo">
             <h1>Ingénieur au Féminin</h1>
         </div>
     </section>
@@ -71,37 +71,37 @@
         <div class="partenaires-container">
             <div class="partenaire-logo">
                 <a href="https://www.credit-agricole.com/marques-et-metiers/toutes-nos-marques/credit-agricole-technologies-et-services">
-                <img src="./public/assets/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Partenaire 1">
+                <img src="assets/Logo_Credit_Agricol_Technologies_Services.jpg" alt="Partenaire 1">
                 </a>
             </div>
             <div class="partenaire-logo">
                 <a href="https://cvec.etudiant.gouv.fr/">
-                    <img src="./public/assets/Logo_CVEC.png" alt="Partenaire 2">
+                    <img src="assets/Logo_CVEC.png" alt="Partenaire 2">
                 </a>
             </div>
             <div class="partenaire-logo">
                 <a href="https://www.univ-smb.fr/listic/">
-                    <img src="./public/assets/Logo_LISTIC.jpg" alt="Partenaire 3">
+                    <img src="assets/Logo_LISTIC.jpg" alt="Partenaire 3">
                 </a>
             </div>
             <div class="partenaire-logo">
                 <a href="https://eshop.ntn-snr.com/fr/">
-                    <img src="./public/assets/Logo_NTN.png" alt="Partenaire 4">
+                    <img src="assets/Logo_NTN.png" alt="Partenaire 4">
                 </a>
             </div>
             <div class="partenaire-logo">
                 <a href="https://www.univ-smb.fr/polytech/">
-                    <img src="./public/assets/Logo_Polytech_Annecy_Chambery.svg.png" alt="Partenaire 5">
+                    <img src="assets/Logo_Polytech_Annecy_Chambery.svg.png" alt="Partenaire 5">
                 </a>
             </div>
             <div class="partenaire-logo">
                 <a href="https://www.soprasteria.com/fr">
-                    <img src="./public/assets/Logo_Sopra_Steria.png" alt="Partenaire 6">
+                    <img src="assets/Logo_Sopra_Steria.png" alt="Partenaire 6">
                 </a>
             </div>
             <div class="partenaire-logo">
                 <a href="https://www.annecy.fr/">
-                    <img src="./public/assets/Logo_Ville_Annecy.png" alt="Partenaire 7">
+                    <img src="assets/Logo_Ville_Annecy.png" alt="Partenaire 7">
                 </a>
             </div>
         </div>
@@ -109,6 +109,6 @@
 
 </main>
 
-<?php require_once("./public/components/footer.php"); ?>
+<?php require_once(__DIR__."/footer.php"); ?>
 </body>
 </html>

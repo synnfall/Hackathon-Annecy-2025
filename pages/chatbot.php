@@ -22,17 +22,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News - Ingénieur Au Féminin</title>
-    <link rel="stylesheet" type="text/css" href="CSS/global.css">
-    <link rel="stylesheet" type="text/css" href="CSS/chatbot.css">
-    <link rel="stylesheet" type="text/css" href="./public/components/header.css">
-    <link rel="stylesheet" type="text/css" href="./public/components/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/chatbot.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./styles/chatbot.css">
+    <link rel="stylesheet" type="text/css" href="styles/chatbot_bot.css">
     <script src="js/chatbot.js" defer></script>
 </head>
 <body>
 
-<?php require_once('./public/components/header.php'); ?>
+<?php require_once(__DIR__.'/header.php'); ?>
 
 <!-- Chatbot Container -->
 <div id="chatbot-container">
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<?php require_once("./public/components/footer.php"); ?>
+<?php require_once(__DIR__."/footer.php"); ?>
 
 <script>
     // Fonction pour envoyer un message

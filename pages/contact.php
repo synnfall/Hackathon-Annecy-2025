@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingenieur Au Féminin</title>
-    <link rel="stylesheet" type="text/css" href="CSS/global.css">
-    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
-    <link rel="stylesheet" type="text/css" href="./public/components/header.css">
-    <link rel="stylesheet" type="text/css" href="./public/components/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-<?php require_once('./public/components/header.php'); ?>
+<?php require_once(__DIR__.'/header.php'); ?>
 <!-- Section du formulaire de contact -->
 <div class="contact-section">
     <!-- Section du formulaire Google Forms -->
@@ -28,6 +28,6 @@
 </div>
 
 
-<?php require_once("./public/components/footer.php"); ?>
+<?php require_once(__DIR__."/footer.php"); ?>
 </body>
 </html>

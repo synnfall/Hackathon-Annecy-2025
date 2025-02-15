@@ -33,20 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <?php require_once(__DIR__.'/header.php'); ?>
-
-<!-- Chatbot Container -->
-<div id="chatbot-container">
-    <button id="chatbot-toggle" onclick="toggleChatbot()">💬</button>
-    <div id="chatbot-window" class="chatbot-window">
-        <div id="chatbot-header">
-            <span>Chatbot</span>
-            <button onclick="closeChatbot()">X</button>
-        </div>
-        <div id="chatbot-messages" class="chatbot-messages"></div>
-        <input type="text" id="user-input" placeholder="Posez une question..." onkeypress="sendMessage(event)">
-    </div>
-</div>
-
 <div class="main">
 
     <button class="chatbot-toggler">

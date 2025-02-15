@@ -1,4 +1,7 @@
 .vscode/
 .idea/
+
+serveur/__pycache__/
+
 DataBase/temp.html
 docker-compose.yml
